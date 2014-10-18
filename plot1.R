@@ -23,7 +23,7 @@ pwr <- power[power$datetime>=strptime("2007-02-01", format="%Y-%m-%d")
              & power$datetime<strptime("2007-02-03", format="%Y-%m-%d"), ]
 
 # create the plot in a png file
-png(filename = "plot1.png", width = 480, height = 480)
+png(filename = "plot1.png", width = 480, height = 480, bg = "transparent")
 hist(pwr$Global_active_power, 
      main="Global Active Power", 
      col = "red", bg = NA,

@@ -35,13 +35,13 @@ plot(pwr$datetime,
      ylab = "Global Active Power",
      xlab = NA)
 
-#plot3 in bottom left corner
+#plot3 in bottom left corner (without the box around the legend)
 plot(pwr$datetime, pwr$Sub_metering_1, type = "l", 
      ylab = "Energy sub metering", xlab = NA)
 lines(pwr$datetime, pwr$Sub_metering_2, col = "red", type = "l")
 lines(pwr$datetime, pwr$Sub_metering_3, col = "blue", type = "l")
 legend("topright",c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),
-       col=c("black","red","blue"),lty=1)
+       col=c("black","red","blue"), lty=1, box.lty = 0)
 
 # Voltage in top right
 plot(pwr$datetime, pwr$Voltage, type = "l",

@@ -26,7 +26,7 @@ pwr <- power[power$datetime>=strptime("2007-02-01", format="%Y-%m-%d")
 png(filename = "plot2.png", width = 480, height = 480, bg = "transparent")
 plot(pwr$datetime,
      pwr$Global_active_power, 
-     bg = NA, type = "l",
+     type = "l",
      ylab = "Global Active Power (kilowatts)",
      xlab = NA)
 dev.off()

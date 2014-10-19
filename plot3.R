@@ -24,7 +24,7 @@ pwr <- power[power$datetime>=strptime("2007-02-01", format="%Y-%m-%d")
 
 # create the plot in a png file
 png(filename = "plot3.png", width = 480, height = 480, bg = "transparent")
-plot(pwr$datetime, pwr$Sub_metering_1, bg = NA, type = "l", 
+plot(pwr$datetime, pwr$Sub_metering_1, type = "l", 
      ylab = "Energy sub metering", xlab = NA)
 lines(pwr$datetime, pwr$Sub_metering_2, col = "red", type = "l")
 lines(pwr$datetime, pwr$Sub_metering_3, col = "blue", type = "l")

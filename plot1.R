@@ -26,6 +26,6 @@ pwr <- power[power$datetime>=strptime("2007-02-01", format="%Y-%m-%d")
 png(filename = "plot1.png", width = 480, height = 480, bg = "transparent")
 hist(pwr$Global_active_power, 
      main="Global Active Power", 
-     col = "red", bg = NA,
+     col = "red",
      xlab = "Global Active Power (kilowatts)")
 dev.off()
